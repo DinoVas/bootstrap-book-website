@@ -1,0 +1,16 @@
+// they must go in the top
+$primary:#C39C43;
+$light: #fbf5e5;
+
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/_variables";
+// Functions file must come first because the variables file uses it
+
+$custom-theme-colors: (
+    "altlight": #f2ebfa,
+    "altdark" : #522192
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+@import '../node_modules/bootstrap/scss/bootstrap';
